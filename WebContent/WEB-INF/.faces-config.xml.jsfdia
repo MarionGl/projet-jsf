@@ -4,9 +4,9 @@
   SHAPE="256,33,0,0" model-entity="JSFProcessGroup">
   <PROCESS-ITEM ID="rules:#accueil.xhtml:0" NAME="item"
    PATH="/accueil.xhtml" model-entity="JSFProcessItem">
-   <PROCESS-ITEM-OUTPUT ID="#ajout::#reservationForm.xhtml"
-    NAME="output" PATH="/reservationForm.xhtml"
-    TARGET="rules:#reservationForm.xhtml" TITLE="/ajout" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="ajout::#reservationForm.xhtml" NAME="output"
+    PATH="/reservationForm.xhtml" TARGET="rules:#reservationForm.xhtml"
+    TITLE="ajout" model-entity="JSFProcessItemOutput"/>
   </PROCESS-ITEM>
  </PROCESS-ITEM>
  <PROCESS-ITEM NAME="rules:#reservationForm.xhtml"
