@@ -1,5 +1,6 @@
 package com.inti.entities;
 
+import java.io.Serializable;
 import java.util.List;
 
 import javax.persistence.Entity;
@@ -9,8 +10,10 @@ import javax.persistence.Id;
 import javax.persistence.OneToMany;
 
 @Entity
-public class Destination {
+public class Destination implements Serializable {
 
+	private static final long serialVersionUID = 1L;
+	
 	private long idDestination;
 	private long longitude;
 	private long latitude;
