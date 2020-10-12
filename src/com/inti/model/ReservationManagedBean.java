@@ -23,7 +23,6 @@ public class ReservationManagedBean implements Serializable {
 	IReservationService resaService = new ReservationService();
 
 	public ReservationManagedBean() {
-		super();
 	}
 
 	public Reservation getResa() {
