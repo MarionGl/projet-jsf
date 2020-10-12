@@ -58,6 +58,10 @@ public class ReservationManagedBean implements Serializable {
 		}
 	}
 	
+	public String ajout() {
+		return "ajout";
+	}
+	
 	
 	
 	
