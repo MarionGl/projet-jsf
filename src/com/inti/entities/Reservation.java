@@ -78,4 +78,12 @@ public class Reservation implements Serializable {
 		return "Reservation [dateReservation=" + dateReservation + ", nbJours=" + nbJours + "]";
 	}
 
+	public Reservation(Long idReservation, Date dateReservation, int nbJours) {
+		super();
+		this.idReservation = idReservation;
+		this.dateReservation = dateReservation;
+		this.nbJours = nbJours;
+	}
+	
+
 }
