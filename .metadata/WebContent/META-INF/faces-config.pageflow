@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pageflow:Pageflow xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:pageflow="http://www.sybase.com/suade/pageflow" id="pf16025109253781" configfile="/projet-jsf/WebContent/META-INF/faces-config.xml">
+  <nodes xsi:type="pageflow:PFPage" name="index.xhtml" x="122" y="370" id="pf16025109355302" referenceLink="//@navigationRule.0/@fromViewId|" outlinks="pf16025109355303 pf16025109355304" path="/index.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="accueil.xhtml" x="338" y="178" id="pf16025109355315" referenceLink="//@navigationRule.1/@fromViewId|" outlinks="pf16025109355316" inlinks="pf16025109355303" path="/accueil.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="erreur.xhtml" x="338" y="562" id="pf16025109355317" referenceLink="//@navigationRule.0/@navigationCase.1/@toViewId|" inlinks="pf16025109355304" path="/erreur.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="update.xhtml" x="554" y="178" id="pf16025109355318" referenceLink="//@navigationRule.1/@navigationCase.0/@toViewId|" inlinks="pf16025109355316" path="/update.xhtml"/>
+  <links id="pf16025109355303" target="pf16025109355315" source="pf16025109355302" outcome="accepted"/>
+  <links id="pf16025109355304" target="pf16025109355317" source="pf16025109355302" outcome="rejected"/>
+  <links id="pf16025109355316" target="pf16025109355318" source="pf16025109355315" outcome="update"/>
+</pageflow:Pageflow>
