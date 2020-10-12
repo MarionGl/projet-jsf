@@ -5,35 +5,7 @@
 	version="2.2">
 
 	<navigation-rule>
-		<from-view-id>/index.xhtml</from-view-id>
-		<navigation-case>
-			<from-outcome>accepted</from-outcome>
-			<to-view-id>/accueil.xhtml</to-view-id>
-		</navigation-case>
-		<navigation-case>
-			<from-outcome>rejected</from-outcome>
-			<to-view-id>/erreur.xhtml</to-view-id>
-		</navigation-case>
-	</navigation-rule>
-	<navigation-rule>
 		<from-view-id>/accueil.xhtml</from-view-id>
-		<navigation-case>
-			<from-outcome>update</from-outcome>
-			<to-view-id>/update.xhtml</to-view-id>
-		</navigation-case>
 	</navigation-rule>
-	<application>
-		<resource-bundle>
-			<base-name>dic_fr</base-name>
-			<var>myDicFr</var>
-		</resource-bundle>
-		<resource-bundle>
-			<base-name>dic_en</base-name>
-			<var>myDicEn</var>
-		</resource-bundle>
-	</application>
-	<validator>
-		<validator-id>emailValidator</validator-id>
-		<validator-class>com.inti.validators.EmailValidator</validator-class>
-	</validator>
+
 </faces-config>
