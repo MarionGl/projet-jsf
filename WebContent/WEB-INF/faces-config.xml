@@ -5,7 +5,7 @@
 	version="2.2">
 
 	<navigation-rule>
-		<from-view-id>/index.xhtml</from-view-id>
+		<from-view-id>/accueil.xhtml</from-view-id>
 		<navigation-case>
 			<from-outcome>accepted</from-outcome>
 			<to-view-id>/accueil.xhtml</to-view-id>

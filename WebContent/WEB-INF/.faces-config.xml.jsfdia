@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PROCESS model-entity="JSFProcess">
+ <PROCESS-ITEM NAME="rules:#accueil.xhtml" PATH="/accueil.xhtml"
+  SHAPE="256,33,0,0" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#accueil.xhtml:0" NAME="item"
+   PATH="/accueil.xhtml" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT ID="accepted::#accueil.xhtml" NAME="output"
+    PATH="/accueil.xhtml" TARGET="rules:#accueil.xhtml" TITLE="accepted" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="rejected::#erreur.xhtml" NAME="output1"
+    PATH="/erreur.xhtml" TARGET="rules:#erreur.xhtml" TITLE="rejected" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+  <PROCESS-ITEM ID="rules:#accueil.xhtml:1" NAME="item1"
+   PATH="/accueil.xhtml" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT ID="update::#update.xhtml" NAME="output"
+    PATH="/update.xhtml" TARGET="rules:#update.xhtml" TITLE="update" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:#erreur.xhtml" PATH="/erreur.xhtml"
+  SHAPE="256,177,0,0" model-entity="JSFProcessGroup"/>
+ <PROCESS-ITEM NAME="rules:#update.xhtml" PATH="/update.xhtml"
+  SHAPE="464,17,0,0" model-entity="JSFProcessGroup"/>
+</PROCESS>
