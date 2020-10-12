@@ -16,13 +16,12 @@ import com.inti.service.interfaces.IReservationService;
 @SessionScoped
 public class ReservationManagedBean implements Serializable {
 
-
 	private static final long serialVersionUID = 1L;
-	
+
 	private Reservation resa = new Reservation();
 	private List<Reservation> reservations = new ArrayList<Reservation>();
 	IReservationService resaService = new ReservationService();
-	
+
 	public ReservationManagedBean() {
 		super();
 	}
@@ -43,28 +42,23 @@ public class ReservationManagedBean implements Serializable {
 	public void setReservations(List<Reservation> reservations) {
 		this.reservations = reservations;
 	}
-	
+
 	@PostConstruct
 	public void init() {
 		this.reservations = resaService.findAll(Reservation.class);
 	}
-	
+
 	public void enregistrerReservation() {
 		try {
 			resaService.save(this.resa);
-			this.resa= new Reservation();
+			this.resa = new Reservation();
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
 	}
-	
+
 	public String ajout() {
 		return "ajout";
 	}
-	
-	
-	
-	
-	
 
 }
