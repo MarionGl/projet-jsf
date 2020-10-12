@@ -20,6 +20,5 @@
 		<property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
 		<!-- Afficher les requêtes SQL générées (true) -->
 		<property name="hibernate.show_sql">true</property>
-		<mapping class="com.inti.entities.Employe" />
 	</session-factory>
 </hibernate-configuration>
