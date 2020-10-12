@@ -11,24 +11,23 @@ import javax.persistence.OneToMany;
 
 @Entity
 public class Voyageur implements Serializable {
-	
-	
+
 	private static final long serialVersionUID = 1L;
-	
+
 	@Id
-	@GeneratedValue(strategy=GenerationType.IDENTITY)
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long idVoyageur;
 	private String nom;
 	private String prenom;
 	private int age;
-	@OneToMany(mappedBy="voyageur")
+	@OneToMany(mappedBy = "voyageur")
 	private List<Reservation> reservations;
-	
+
 	public Voyageur() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
-	
+
 	public Voyageur(String nom, String prenom, int age) {
 		super();
 		this.nom = nom;
@@ -67,7 +66,6 @@ public class Voyageur implements Serializable {
 	public void setAge(int age) {
 		this.age = age;
 	}
-	
 
 	public List<Reservation> getReservations() {
 		return reservations;

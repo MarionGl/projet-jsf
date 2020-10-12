@@ -16,20 +16,20 @@ import javax.persistence.TemporalType;
 public class Reservation implements Serializable {
 
 	private static final long serialVersionUID = 1L;
-	
+
 	@Id
-	@GeneratedValue(strategy=GenerationType.IDENTITY)
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long idReservation;
 	@Temporal(TemporalType.DATE)
 	private Date dateReservation;
 	private int nbJours;
 	@ManyToOne
-	@JoinColumn(name="idVoyageur")
+	@JoinColumn(name = "idVoyageur")
 	private Voyageur voyageur;
 	@ManyToOne
-	@JoinColumn(name="idHotel")
+	@JoinColumn(name = "idHotel")
 	private Hotel hotel;
-	
+
 	public Reservation() {
 		super();
 		// TODO Auto-generated constructor stub
@@ -64,7 +64,6 @@ public class Reservation implements Serializable {
 	public void setNbJours(int nbJours) {
 		this.nbJours = nbJours;
 	}
-	
 
 	public Voyageur getVoyageur() {
 		return voyageur;
@@ -78,11 +77,5 @@ public class Reservation implements Serializable {
 	public String toString() {
 		return "Reservation [dateReservation=" + dateReservation + ", nbJours=" + nbJours + "]";
 	}
-	
-	 
-	
-	
-	
-	
 
 }
