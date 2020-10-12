@@ -25,7 +25,7 @@ public class Destination implements Serializable {
 	}
 
 	@OneToMany(mappedBy = "destination")
-	public List<Hotel> getHotel() {
+	public List<Hotel> getHotels() {
 		return (List<Hotel>) hotels;
 	}
 
