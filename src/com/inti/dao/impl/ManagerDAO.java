@@ -22,7 +22,6 @@ public class ManagerDAO<T> implements IDAO<T> {
 		} catch (HibernateException e) {
 			e.printStackTrace();
 		}
-
 	}
 
 	@Override
