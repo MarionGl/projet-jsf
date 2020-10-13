@@ -1,6 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
+<pageflow:Pageflow xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:pageflow="http://www.sybase.com/suade/pageflow" id="pf16025114358700" configfile="/GestionAgenceVoyage/WebContent/WEB-INF/faces-config.xml">
+  <nodes xsi:type="pageflow:PFPage" name="accueil.xhtml" x="122" y="178" id="pf16025154141881" referenceLink="//@navigationRule.0/@fromViewId|" outlinks="pf16025154141882" path="/accueil.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="reservationForm.xhtml" x="338" y="178" id="pf16025154141883" referenceLink="//@navigationRule.0/@navigationCase.0/@toViewId|" inlinks="pf16025154141882" path="/reservationForm.xhtml"/>
+  <links id="pf16025154141882" target="pf16025154141883" source="pf16025154141881" outcome="ajout"/>
+=======
 <pageflow:Pageflow xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:pageflow="http://www.sybase.com/suade/pageflow" id="pf16025114358700" configfile="/projet-jsf/WebContent/WEB-INF/faces-config.xml">
   <nodes xsi:type="pageflow:PFPage" name="accueil.xhtml" x="122" y="178" id="pf160251547320010" referenceLink="//@navigationRule.0/@fromViewId|" outlinks="pf160251547320011" path="/accueil.xhtml"/>
   <nodes xsi:type="pageflow:PFPage" name="reservationForm.xhtml" x="338" y="178" id="pf160251547320012" referenceLink="//@navigationRule.0/@navigationCase.0/@toViewId|" inlinks="pf160251547320011" path="/reservationForm.xhtml"/>
   <links id="pf160251547320011" target="pf160251547320012" source="pf160251547320010" outcome="ajout"/>
+>>>>>>> a8fde64a26ce69f9a12321b094771c1ef3dea597
 </pageflow:Pageflow>
