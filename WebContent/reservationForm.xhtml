@@ -13,7 +13,7 @@
 
 <h:outputLabel for="dureeReservation"> Duree de la reservation </h:outputLabel>
 <h:inputText  id="dureeReservation" value="#{ReservationManagedBean.resa.nbJours}"><f:convertNumber pattern = "#000" /></h:inputText>
-<h:commandButton type="submit" value="#{ReservationManagedBean.enregistrerReservation()}"/>
+<h:commandButton action="#{ReservationManagedBean.enregistrerReservation()}"/>
 
 
 </h:form>
