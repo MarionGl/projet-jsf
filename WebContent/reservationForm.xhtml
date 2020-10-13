@@ -1,22 +1,22 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:h="http://java.sun.com/jsf/html" xmlns:f="http://java.sun.com/jsf/core">
-<h:head>
-<meta charset="ISO-8859-1"/>
-<title>Insert title here</title>
-</h:head>
-<h:body>
-
-<h:form>
-<legend>Ajout d'une reservation</legend>
-<h:outputLabel for="debutReservation"> Date de debut de la reservation </h:outputLabel>
-<h:inputText  id="debutReservation" value="#{ReservationManagedBean.resa.dateReservation}"><f:convertDateTime pattern="dd-MM-yyyy" /></h:inputText>
-
-<h:outputLabel for="dureeReservation"> Duree de la reservation </h:outputLabel>
-<h:inputText  id="dureeReservation" value="#{ReservationManagedBean.resa.nbJours}"><f:convertNumber pattern = "#000" /></h:inputText>
-<h:commandButton type="submit" value="#{ReservationManagedBean.enregistrerReservation()}"/>
-
-
-</h:form>
-
-</h:body>
+	<h:head>
+		<meta charset="ISO-8859-1"/>
+		<title>Reservation</title>
+	</h:head>
+	<h:body>
+		<h:form>
+			<legend>Ajout d'une reservation</legend>
+			<br/>
+			<h:outputLabel for="debutReservation"> Date de debut de la reservation </h:outputLabel>
+			<br/>
+			<h:inputText  id="debutReservation" value="#{ReservationManagedBean.resa.dateReservation}"><f:convertDateTime pattern="dd-MM-yyyy" /></h:inputText>
+			<br/>
+			<h:outputLabel for="dureeReservation"> Duree de la reservation </h:outputLabel>
+			<br/>
+			<h:inputText  id="dureeReservation" value="#{ReservationManagedBean.resa.nbJours}"><f:convertNumber pattern = "#000" /></h:inputText>
+			<br/>
+			<h:commandButton type="submit" action="#{ReservationManagedBean.enregistrerReservation()}" value="Reserver"/>
+		</h:form>
+	</h:body>
 </html>
